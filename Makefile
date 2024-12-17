@@ -12,23 +12,23 @@ lint:
 
 .PHONY: migrate
 migrate:
-	poetry run python -m cooking_core.manage migrate
+	poetry run python -m src.manage migrate
 
 .PHONY: migrations
 migrations:
-	poetry run python -m cooking_core.manage makemigrations
+	poetry run python -m src.manage makemigrations
 
 .PHONY: run-server
 run-server:
-	poetry run python -m cooking_core.manage runserver
+	poetry run python -m src.manage runserver
 
 .PHONY: shell
 shell:
-	poetry run python -m cooking_core.manage shell
+	poetry run python -m src.manage shell
 
 .PHONY: superuser
 superuser:
-	poetry run python -m cooking_core.manage createsuperuser
+	poetry run python -m src.manage createsuperuser
 
 .PHONY: test
 test:
