@@ -1,6 +1,5 @@
 import os
 from pathlib import Path
-
 from typing import List
 
 DEBUG = True
@@ -9,8 +8,6 @@ SECRET_KEY = 'django-insecure-og)+bp*1tvrqb(abb=m1@k&h6s6g-9x+9h&xd!ci330yn(w5l=
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-
-
 
 ALLOWED_HOSTS: List[str] = ['*']
 CORS_ALLOW_ALL_ORIGINS = True
@@ -78,15 +75,12 @@ TEMPLATES = [
 ASGI_APPLICATION = 'src.project.asgi.application'
 WSGI_APPLICATION = 'src.project.wsgi.application'
 
-
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-
-
 
 # DATABASES = {
 #     'default': {

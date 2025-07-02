@@ -18,21 +18,15 @@ class Migration(migrations.Migration):
                 ('id', models.UUIDField(primary_key=True, serialize=False)),
                 (
                     'sender',
-                    models.CharField(
-                        max_length=64, validators=[src.general.validators.HexStringValidator(64)]
-                    )
+                    models.CharField(max_length=64, validators=[src.general.validators.HexStringValidator(64)])
                 ),
                 (
                     'signature',
-                    models.CharField(
-                        max_length=128, validators=[src.general.validators.HexStringValidator(128)]
-                    )
+                    models.CharField(max_length=128, validators=[src.general.validators.HexStringValidator(128)])
                 ),
                 (
                     'recipient',
-                    models.CharField(
-                        max_length=64, validators=[src.general.validators.HexStringValidator(64)]
-                    )
+                    models.CharField(max_length=64, validators=[src.general.validators.HexStringValidator(64)])
                 ),
                 ('amount', models.PositiveBigIntegerField()),
                 ('transaction_fee', models.PositiveBigIntegerField()),
